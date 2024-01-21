@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 h1 {
     font-size: 50px;
     text-align: center;
@@ -66,3 +67,58 @@ body {
 
 
 
+=======
+/* Base grid layout and spacing */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem; /* Adjust the gap size as needed */
+}
+
+/* Styling for each column */
+.column {
+    text-align: center;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Image styling */
+.column img {
+    width: 100%; /* Adjust if needed */
+    margin: auto;
+    display: block;
+}
+
+/* Heading styling */
+.column h2 {
+    font-size: 1.5rem; /* Adjust if needed */
+    color: #1c3a63; /* Dark blue color */
+}
+
+/* Link styling */
+.column a {
+    color: #007bff; /* Adjust the color as needed */
+    text-decoration: none;
+}
+
+.column a:hover {
+    text-decoration: underline;
+}
+
+/* Hover effects */
+.group:hover .column {
+    filter: blur(4px);
+}
+
+.group .column:hover {
+    transform: scale(1.1);
+    filter: blur(0px);
+    z-index: 10;
+}
+
+/* Responsive design (optional) */
+@media screen and (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+>>>>>>> main
