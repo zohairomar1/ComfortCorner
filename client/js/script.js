@@ -11,6 +11,13 @@ var myArray = ["Remember there are many as good as you but nobody better!",
 ]
 
 function change_quote() {
-    document.querySelector("button").innerHTML = 
-    myArray[Math.floor(Math.random()*myArray.length)];
+    document.querySelector("button").innerHTML = random_quote();
+    
+}
+
+document.getElementById("showQuote").textContent = random_quote();
+
+function random_quote() {
+    let quote = myArray[Math.floor(Math.random()*myArray.length)];
+    return quote;
 }
