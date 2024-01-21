@@ -14,30 +14,26 @@
 </head>
 
 <body>
-    <video id="myVideo" playsinline autoplay muted loop>
-        <source src="images/video.mp4" type="video/mp4">
-    </video>
-  
     <div>
         <header>
             <div class="left-side-logo">
-                <h1>Mindful</h1>
+                <p class="logo-text">comfort corner<p>
                 <!-- <h2>Find Support Today</h2> -->
             </div>
             <div class="navigation">
                 <div class="tip-column">
                     <nav>
-                        <a href="#">About us</a>
+                        <a class=nav-button href="#">About us</a>
                     </nav>
                 </div>
                 <div class="tip-column">
                     <nav>
-                        <a href="#">Resources</a>
+                        <a class=nav-button href="#">Resources</a>
                     </nav>
                 </div>
                 <div class="tip-column">
                     <nav>
-                        <a href="#">Tips</a>
+                        <a class=nav-button href="#">Tips</a>
                     </nav>
                 </div>
             </div>
@@ -52,39 +48,49 @@
         </section>
 
         <section class="tips">
-            <div class= "tip-column sleep" href="articles/betterSpeep.html">
-                <img src="images/sleepwb.png" alt="Illustration of a person sleeping peacefully" >
+            <div class="color-block" id="sleep">
+              <a href="sleepBetter.html">
+                <img src="images/sleepwb.png" alt="Illustration of a person sleeping peacefully">
                 <h2>Sleep Better</h2>
+              </a>
             </div>
-            <div class="tip-column anxiety" href="articles/manageAnxiety.html">
-                <img src="images/anxiety.png"alt="Illustration of a person meditating to manage anxiety" >
+            <div class="color-block" id="anxiety">
+              <a href="manageAnxiety.html">
+                <img src="images/anxiety.png" alt="Illustration of a person meditating to manage anxiety">
                 <h2 class="text-lg text-blue-900">Manage Anxiety</h2>
+              </a>
             </div>
-            <div class="tip-column stress" href="articles/copeWithStress.html">
-                <img src="images/stress.png" alt="Illustration of a person organizing work to cope with stress"  width = 200 height = 200>
-                <h2 >Cope with Stress</h2>
+            <div class="color-block" id="stress">
+              <a href="copeWithStress.html">
+                <img src="images/stress.png" alt="Illustration of a person organizing work to cope with stress">
+                <h2>Cope with Stress</h2>
+              </a>
             </div>
-        </section>
+          </section>
+
 
         <section class = "resources">
             <div class = "peer">
                 <h2 >Peer Support</h2>
-                    <div>
-                        <a id="peersupport" href="https://www.ams.ubc.ca/support-services/student-services/peer-support/">Peer Support</a>
-                        <a id="src" href="https://students.ubc.ca/health/ubc-student-recovery-community">Student Recovery Community</a>
-                    </div>
-                    
+                <div class="color-block" id="resource">
+                    <a id="peersupport" href="https://www.ams.ubc.ca/support-services/student-services/peer-support/">Peer Support</a>
+                </div>
+                <div class="color-block" id="resource">
+                    <a id="student-recovery-community" href="https://students.ubc.ca/health/ubc-student-recovery-community">Student Recovery Community</a>
+                </div>
             </div>
-    
+
             <div class = "counselling">
                 <h2 >Counselling Services</h2>
-                <ul>
-                    <li> <a href="https://students.ubc.ca/health/counselling-services"> UBC Counselling</a> </li>
-                    <li> <a href="https://foundrybc.ca/virtual/"> Foundry Counselling </a> </li>
-                    <li> <a href="https://students.ubc.ca/health/counselling-services/group-counselling-programs"> Group Counselling</a> </li>
-                    </ul>
+                <div class = "color-block" id="resource">
+                    <a href="https://students.ubc.ca/health/counselling-services"> UBC Counselling</a>
+                </div>
+                <div class = "color-block" id="resource">
+                    <a href="https://foundrybc.ca/virtual/"> Foundry Counselling </a>
+                </div>
             </div>
         </section>
+
 
         <section class = "about">
             <div class = "about">
@@ -116,7 +122,6 @@
                         <script src="js/script.js"></script>
                     </body>
                 </div>
-
             </div>
         </section>
 
