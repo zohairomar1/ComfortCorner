@@ -1,15 +1,22 @@
 
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
 h1 {
     font-size: 50px;
+    font-family: "Josefin Sans", sans-serif;
     text-align: center;
+    margin: 0;
 }
+
 h2 {
     font-size: 30px;
     text-align: center;
 }
 
 a {
-    color : white ;
+    color : rgb(0, 0, 0) ;
     text-decoration: none;
     padding: 8px 20px;
     border-radius: 5px;
@@ -30,14 +37,32 @@ a {
     background-color:azure
 }
 
-
+header {
+    width: 100%;
+    background-color: rgb(189, 220, 255);
+}
 
 body {
-    background-color:white;
+    width: 100%;
+    background-color: white;
     font-family: sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+    justify-content: left;
+    margin: 0;
+}
+
+button {
+    background-color: rgb(251, 249, 245);
+    font-size: 60px;
+    border: 0px;
+    font-family: Junge;
+}
+
+.message {
+    width: 100%;
+    background-color: rgb(251, 249, 245); /* Or any color you wish to use */
+    text-align: center;
+    padding: 70px 0; /* Vertical padding as needed */
 }
 
 .sleep{
@@ -105,35 +130,31 @@ body {
 }
 
 
-/* Base grid layout and spacing */
+
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem; /* Adjust the gap size as needed */
+    gap: 1rem;
 }
 
-/* Styling for each column */
 .column {
     text-align: center;
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-/* Image styling */
 .column img {
-    width: 100%; /* Adjust if needed */
+    width: 100%;
     margin: auto;
     display: block;
 }
 
-/* Heading styling */
 .column h2 {
-    font-size: 1.5rem; /* Adjust if needed */
-    color: #1c3a63; /* Dark blue color */
+    font-size: 1.5rem;
+    color: #1c3a63;
 }
 
-/* Link styling */
 .column a {
-    color: #007bff; /* Adjust the color as needed */
+    color: #007bff;
     text-decoration: none;
 }
 
@@ -152,20 +173,17 @@ body {
     text-decoration: underline;
 }
 
-/* Hover effects */
 .group:hover .column {
     filter: blur(4px);
 }
 
 .tip-column:hover {
     transform: scale(1.1);
-} */
+}
 
 
-/* Responsive design (optional) */
 @media screen and (max-width: 768px) {
     .grid {
         grid-template-columns: 1fr;
     }
 }
-
