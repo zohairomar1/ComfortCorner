@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mindful Minds - Find Support Today</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
     <style>
         body {
             font-family: 'Open Sans', sans-serif;
@@ -15,53 +15,59 @@
     </style>
 </head>
 
-<body class="bg-blue-100">
-    <div class="container mx-auto px-4 py-6">
-        <header class="text-center mb-6">
-            <h1 class="text-4xl text-blue-900 font-semibold">Mindful Minds</h1>
-            <p class="text-xl text-blue-800">Find Support Today</p>
-            <nav class="flex justify-center space-x-4 mt-4">
-                <a href="#" class="text-blue-800 hover:underline">About us</a>
-                <a href="#" class="text-blue-800 hover:underline">Resources</a>
-                <a href="#" class="text-blue-800 hover:underline">Tips</a>
-            </nav>
+<body >
+    <div>
+        <header>
+            <h1 >Mindful Minds</h1>
+            <h2 >Find Support Today</h2>
+            <div class = "menus">
+                <nav>
+                <a href="#" >About us</a>
+                <a href="#" >Resources</a>
+                <a href="#" >Tips</a>
+                </nav>
+            </div>
+
         </header>
 
-        <section class="bg-white rounded-lg p-4 shadow-md mb-6">
-            <p class="text-center text-lg text-gray-600">You've overcome challenges before, face this one too!</p>
+        <section>
+            <p >
+                <button id="showQuote" onclick = change_quote()>
+                    You are good enough!
+                </button>
+            </p>
+            <script>
+                
+            </script>
         </section>
 
-        <section class="mb-6">
-            <div class="grid grid-cols-3 gap-4">
-                <div class="text-center">
-                    <img src="https://placehold.co/100x100" alt="Illustration of a person sleeping peacefully" class="mx-auto mb-2">
-                    <h2 class="text-lg text-blue-900">Sleep Better</h2>
+        <section >
+            <div class="tips">
+                <div class= "sleep" >
+                    <img src="sleep.png" alt="Illustration of a person sleeping peacefully" >
+                    <h2 >Sleep Better</h2>
                     <a href="#" class="text-blue-500 hover:underline">Articles</a>
                 </div>
-                <div class="text-center">
-                    <img src="https://placehold.co/100x100" alt="Illustration of a person meditating to manage anxiety" class="mx-auto mb-2">
+                <div class="anxiety">
+                    <img src="anxietywb.png"alt="Illustration of a person meditating to manage anxiety" >
                     <h2 class="text-lg text-blue-900">Manage Anxiety</h2>
-                    <a href="#" class="text-blue-500 hover:underline">Articles</a>
+                    <a href="#" >Articles</a>
                 </div>
-                <div class="text-center">
-                    <img src="https://placehold.co/100x100" alt="Illustration of a person organizing work to cope with stress" class="mx-auto mb-2">
-                    <h2 class="text-lg text-blue-900">Cope with Stress</h2>
-                    <a href="#" class="text-blue-500 hover:underline">Articles</a>
+                <div class="stress">
+                    <img src="stress.png" alt="Illustration of a person organizing work to cope with stress"  width = 200 height = 200>
+                    <h2 >Cope with Stress</h2>
+                    <a href="#">Articles</a>
                 </div>
             </div>
         </section>
 
-        <section class="grid grid-cols-2 gap-4 mb-6">
-            <div class="bg-blue-900 text-white p-4 rounded-lg text-center">
-                <img src="https://placehold.co/100x100" alt="Illustration of a group of people supporting each other" class="mx-auto mb-2">
-                <h2 class="text-lg">Peer Support</h2>
-            </div>
-            <div class="bg-blue-900 text-white p-4 rounded-lg text-center">
-                <img src="https://placehold.co/100x100" alt="Illustration of a counselling session" class="mx-auto mb-2">
-                <h2 class="text-lg">Counselling Services</h2>
+        <section>
+            <div resources >
+                <div class = "peer">
+                     <img src="https://placehold.co/100x100" alt="Illustration of a group of people supporting each other" >
+                     <h2 >Peer Support</h2>
+                <div class = "counselling">
+                <img src="https://placehold.co/100x100" alt="Illustration of a counselling session" >
+                <h2 >Counselling Services</h2>
             </div>
         </section>
-    </div>
-</body>
-
-</html>
