@@ -16,78 +16,80 @@
 <body>
     <div>
         <header>
-            <h1 >Mindful Minds</h1>
-            <h2 >Find Support Today</h2>
-            <div class = "menus">
-                <nav >
-                <a href="#" >About us</a>
-                <a href="#" >Resources</a>
-                <a href="#" >Tips</a>
-                </nav>
+            <div class="left-side-logo">
+                <h1>Mindful</h1>
+                <!-- <h2>Find Support Today</h2> -->
+            </div>
+            <div class="navigation">
+                <div class="tip-column">
+                    <nav>
+                        <a href="#">About us</a>
+                    </nav>
+                </div>
+                <div class="tip-column">
+                    <nav>
+                        <a href="#">Resources</a>
+                    </nav>
+                </div>
+                <div class="tip-column">
+                    <nav>
+                        <a href="#">Tips</a>
+                    </nav>
+                </div>
             </div>
         </header>
 
-        <a href = "chatbot.html"> Consult with a chatbot</a>
 
-        <section>
-            <p >
-                <button id="showQuote" onclick = change_quote()>
-                    default label
-                </button>
-            </p>
+        <section class="message-block">
+            <button id="showQuote" onclick = change_quote()>
+                default label
+            </button>
             <script src="js/script.js"></script>
         </section>
 
-        <section >
-            <div class="tips">
-                <div class= "sleep" >
-                    <img src="images/sleepwb.png" alt="Illustration of a person sleeping peacefully" >
-                    <h2 >Sleep Better</h2>
-                    <a href="#" class="text-blue-500 hover:underline">Articles</a>
-                </div>
-                <div class="anxiety">
-                    <img src="images/anxiety.png"alt="Illustration of a person meditating to manage anxiety" >
-                    <h2 class="text-lg text-blue-900">Manage Anxiety</h2>
-                    <a href="#" >Articles</a>
-                </div>
-                <div class="stress">
-                    <img src="images/stress.png" alt="Illustration of a person organizing work to cope with stress"  width = 200 height = 200>
-                    <h2 >Cope with Stress</h2>
-                    <a href="#">Articles</a>
-                </div>
+        <section class="tips">
+            <div class= "tip-column sleep" href="articles/betterSpeep.html">
+                <img src="images/sleepwb.png" alt="Illustration of a person sleeping peacefully" >
+                <h2>Sleep Better</h2>
+            </div>
+            <div class="tip-column anxiety" href="articles/manageAnxiety.html">
+                <img src="images/anxiety.png"alt="Illustration of a person meditating to manage anxiety" >
+                <h2 class="text-lg text-blue-900">Manage Anxiety</h2>
+            </div>
+            <div class="tip-column stress" href="articles/copeWithStress.html">
+                <img src="images/stress.png" alt="Illustration of a person organizing work to cope with stress"  width = 200 height = 200>
+                <h2 >Cope with Stress</h2>
             </div>
         </section>
 
-        <section >
-            <div class = "resources" >
-                <div class = "peer">
-                    <h2 >Peer Support</h2>
-                        <div>
-                            <a id="peersupport" href="https://www.ams.ubc.ca/support-services/student-services/peer-support/">Peer Support</a>
-                            <a id="src" href="https://students.ubc.ca/health/ubc-student-recovery-community">Student Recovery Community</a>
-                        </div>
-                     
-                </div>
+        <section class = "resources">
+            <div class = "peer">
+                <h2 >Peer Support</h2>
+                    <div>
+                        <a id="peersupport" href="https://www.ams.ubc.ca/support-services/student-services/peer-support/">Peer Support</a>
+                        <a id="src" href="https://students.ubc.ca/health/ubc-student-recovery-community">Student Recovery Community</a>
+                    </div>
+                    
+            </div>
+    
+            <div class = "counselling">
+                <h2 >Counselling Services</h2>
+                <ul>
+                    <li> <a href="https://students.ubc.ca/health/counselling-services"> UBC Counselling</a> </li>
+                    <li> <a href="https://foundrybc.ca/virtual/"> Foundry Counselling </a> </li>
+                    <li> <a href="https://students.ubc.ca/health/counselling-services/group-counselling-programs"> Group Counselling</a> </li>
+                    </ul>
+            </div>
+        </section>
+
+        <section class = "about">
+            <div class = "about">
+                <h2 >About Us</h2>
         
-                <div class = "counselling">
-                    <h2 >Counselling Services</h2>
-                    <ul>
-                        <li> <a href="https://students.ubc.ca/health/counselling-services"> UBC Counselling</a> </li>
-                        <li> <a href="https://foundrybc.ca/virtual/"> Foundry Counselling </a> </li>
-                        <li> <a href="https://students.ubc.ca/health/counselling-services/group-counselling-programs"> Group Counselling</a> </li>
-                     </ul>
-                    
-                </div>
+                
             </div>
         </section>
-        <section >
-            <div class = "about" >
-                <div class = "about">
-                    <h2 >About Us</h2>
-            
-                    
-                </div>
-            </div>
-        </section>
+
+        <a href = "js/chatbot.html"> Consult with a chatbot</a>
     </div>
 </body>

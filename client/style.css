@@ -4,9 +4,10 @@ body {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 40px;
     font-family: "Josefin Sans", sans-serif;
     text-align: center;
+    padding-right: 50px;
     margin: 0;
 }
 
@@ -20,6 +21,8 @@ a {
     text-decoration: none;
     padding: 8px 20px;
     border-radius: 5px;
+    font-size: 20px;
+    padding: 30px;
 }
 
 .resources-menu{
@@ -37,9 +40,28 @@ a {
     background-color:azure
 }
 
+/* blue rgb(189, 220, 255) */
+
 header {
+    position: relative;
     width: 100%;
-    background-color: rgb(189, 220, 255);
+    background-color: white;
+    margin: 0;
+}
+
+.left-side-logo {
+    position: absolute;
+    top: 50%;
+    left: 30px; /*30px from left edge */
+    transform: translateY(-50%);
+}
+
+.navigation {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 body {
@@ -51,84 +73,63 @@ body {
     margin: 0;
 }
 
+
+
 button {
+    width: 70%;
     background-color: rgb(251, 249, 245);
     font-size: 60px;
     border: 0px;
     font-family: Junge;
+    align-items: center;
+    justify-content: center;
 }
 
-.message {
+.message-block {
     width: 100%;
-    background-color: rgb(251, 249, 245); /* Or any color you wish to use */
+    background-color: rgb(251, 249, 245);
     text-align: center;
-    padding: 70px 0; /* Vertical padding as needed */
-}
-
-.sleep{
-     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.anxiety{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.sleep{
-    background-color:rgb(117, 191, 252);
-}
-
-.anxiety{
-    background-color:rgb(117, 191, 252) ;
-}
-
-.stress{
-    background-color:rgb(117, 191, 252) ;
+    padding: 70px 0;
+    margin: 0;
 }
 
 
-.stress{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 
-.tips{
+.tips {
     display: flex;
     flex-direction: row;
-}
-
-.menus{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.resources{
-    display: flex;
-    flex-direction: row;
+    margin: 30px;
 }
 
 .sleep, .anxiety, .stress {
+    background-color: rgb(251, 249, 245);
     flex: 1;
-    margin: 10px;
-    padding: 20px;
-    border: 1px solid #ccc;
+    margin: 30px;
+    padding: 50px;
+    border: 0px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
 }
 
-.sleep, .anxiety, .stress {
-    flex: 1;
-    margin: 10px;
-    padding: 20px;
-    border: 1px solid #ccc;
+.tip-discriptions {
+    background-color:rgb(189, 220, 255);
 }
 
+.tip-column:hover {
+    transform: scale(1.1);
+}
+
+
+.resources {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 
 
 .grid {
@@ -166,19 +167,6 @@ button {
 #src {
     background-color: steelblue;
     margin-right: 16px;
-}
-
-
-.column a:hover {
-    text-decoration: underline;
-}
-
-.group:hover .column {
-    filter: blur(4px);
-}
-
-.tip-column:hover {
-    transform: scale(1.1);
 }
 
 
