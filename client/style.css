@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> main
+
 h1 {
     font-size: 50px;
     text-align: center;
@@ -10,7 +7,6 @@ h2 {
     font-size: 30px;
     text-align: center;
 }
-<<<<<<< HEAD
 
 .resources-menu{
     font-size: 20px;
@@ -27,8 +23,8 @@ h2 {
     background-color:azure
 }
 
-=======
->>>>>>> main
+
+
 body {
     background-color:rgb(170, 205, 246);
     font-family: sans-serif;
@@ -50,6 +46,18 @@ body {
     align-items: center;
     justify-content: center;
 }
+.sleep{
+    background-color:rgb(117, 191, 252);
+}
+
+.anxiety{
+    background-color:rgb(117, 191, 252) ;
+}
+
+.stress{
+    background-color:rgb(117, 191, 252) ;
+}
+
 
 .stress{
     display: flex;
@@ -62,18 +70,12 @@ body {
     display: flex;
     flex-direction: row;
 }
-<<<<<<< HEAD
+
 .menus{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-=======
-
-.menus{
-    display: flex;
-    flex-direction: row;
->>>>>>> main
 }
 
 .resources{
@@ -88,37 +90,14 @@ body {
     border: 1px solid #ccc;
 }
 
-<<<<<<< HEAD
-.peer, .counselling{
-=======
 .sleep, .anxiety, .stress {
->>>>>>> main
     flex: 1;
     margin: 10px;
     padding: 20px;
     border: 1px solid #ccc;
 }
 
-<<<<<<< HEAD
-.sleep{
-    background-color:rgb(117, 191, 252);
-}
 
-.anxiety{
-    background-color:rgb(117, 191, 252) ;
-}
-
-.stress{
-    background-color:rgb(117, 191, 252) ;
-}
-
-
-
-
-=======
-
-
-=======
 /* Base grid layout and spacing */
 .grid {
     display: grid;
@@ -172,5 +151,4 @@ body {
         grid-template-columns: 1fr;
     }
 }
->>>>>>> main
->>>>>>> main
+
