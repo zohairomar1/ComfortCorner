@@ -8,6 +8,13 @@ h2 {
     text-align: center;
 }
 
+a {
+    color : white ;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+
 .resources-menu{
     font-size: 20px;
 }
@@ -19,14 +26,14 @@ h2 {
 }
 .quote{
     font-size: 35px;
-    text-align: center;
+    text-align: left;
     background-color:azure
 }
 
 
 
 body {
-    background-color:rgb(170, 205, 246);
+    background-color:white;
     font-family: sans-serif;
     display: flex;
     align-items: center;
@@ -123,8 +130,31 @@ body {
     font-size: 1.5rem; /* Adjust if needed */
     color: #1c3a63; /* Dark blue color */
 }
-/* .tip-column {
-    transition: transform 0.3s ease;
+
+/* Link styling */
+.column a {
+    color: #007bff; /* Adjust the color as needed */
+    text-decoration: none;
+}
+
+#peersupport {
+    background-color: steelblue;
+    margin-right: 16px;
+}
+
+#src {
+    background-color: steelblue;
+    margin-right: 16px;
+}
+
+
+.column a:hover {
+    text-decoration: underline;
+}
+
+/* Hover effects */
+.group:hover .column {
+    filter: blur(4px);
 }
 
 .tip-column:hover {
