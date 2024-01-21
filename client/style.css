@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 h1 {
     font-size: 50px;
     text-align: center;
@@ -7,6 +7,24 @@ h2 {
     font-size: 30px;
     text-align: center;
 }
+
+.resources-menu{
+    font-size: 20px;
+}
+.tips-menu{
+    font-size: 20px;
+}
+.about{
+    font-size: 20px;
+}
+.quote{
+    font-size: 35px;
+    text-align: center;
+    background-color:azure
+}
+
+
+
 body {
     background-color:rgb(170, 205, 246);
     font-family: sans-serif;
@@ -28,6 +46,18 @@ body {
     align-items: center;
     justify-content: center;
 }
+.sleep{
+    background-color:rgb(117, 191, 252);
+}
+
+.anxiety{
+    background-color:rgb(117, 191, 252) ;
+}
+
+.stress{
+    background-color:rgb(117, 191, 252) ;
+}
+
 
 .stress{
     display: flex;
@@ -44,6 +74,8 @@ body {
 .menus{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .resources{
@@ -66,8 +98,6 @@ body {
 }
 
 
-
-=======
 /* Base grid layout and spacing */
 .grid {
     display: grid;
@@ -121,4 +151,4 @@ body {
         grid-template-columns: 1fr;
     }
 }
->>>>>>> main
+
