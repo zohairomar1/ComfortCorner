@@ -34,6 +34,7 @@ We aim to improve the accuracy of our comfort bot to better aid students in thei
 make sure you pull the latest changes from the remote repository:  
 ```
 git fetch origin main
+git checkout main
 git pull origin main
 ```
 Then create and swich to a new branch. You must make your changes in this new branch, so that later it can be reviewed and merged into the main branch:
