@@ -25,32 +25,3 @@ We learned how the front-end and back-end works together to create a interactive
 ## What's next for comfort corner
 
 We aim to improve the accuracy of our comfort bot to better aid students in their day-to-day life, perhaps preserving a chat history, and adding the ability to login to accounts.
-
-
-
-# This is how to commit your changes to git
-
-## Before you make any changes:
-make sure you pull the latest changes from the remote repository:  
-```
-git fetch origin main
-git checkout main
-git pull origin main
-```
-Then create and swich to a new branch. You must make your changes in this new branch, so that later it can be reviewed and merged into the main branch:
-```
-git branch <your_branch>
-git checkout <your_branch>
-``` 
-merge the local main with your branch:
-```
-git merge main
-```
-
-## Regularly stage, commit, and push your changes
-```
-git add .
-git commit -m "Your commit message"
-git push origin <your_branch>
-```
-Replace "Your commit message" with a brief, informative description of the changes included in the commit.
