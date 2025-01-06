@@ -1,5 +1,7 @@
 This is our Hackathon project for nwHacks 2024!
 
+To access: https://comfortcorner-web.netlify.app/
+
 <img width="1440" alt="confort corner Website Preview" src="https://github.com/johnny-581/Hackathon-Project-1/assets/57878133/063bf8be-227e-4d86-953c-a1d6c92c3b24">
 
 ## Inspiration
