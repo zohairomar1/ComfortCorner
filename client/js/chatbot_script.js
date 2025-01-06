@@ -4,8 +4,7 @@ const chatbox = document.querySelector(".chatbox");
 const chatbotToggler = document.querySelector(".chatbot-toggler");
 
 let userMessage;
-const API_KEY = "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"; // Replace with your valid API key
-const API_URL = "https://api.openai.com/v1/chat/completions";
+const API_URL = "/.netlify/functions/chatbot"; // Backend endpoint for the Netlify function
 
 // Function to create chat bubbles
 const createChatLi = (message, className) => {
@@ -28,23 +27,9 @@ const generateResponse = (incomingChatLi) => {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
-            "Authorization": `Bearer ${API_KEY}`,
         },
         body: JSON.stringify({
-            model: "gpt-3.5-turbo",
-            messages: [
-                {
-                    role: "system",
-                    content: "I want you to act as a compassionate and supportive person who is skilled at providing comfort to someone going through a tough time. Your role is to listen actively, validate their feelings, and provide supportive and empathetic responses. Avoid judgment or offering unsolicited advice unless specifically asked. Provide a warm and understanding tone to reassure and encourage them.\n" +
-                        "\n" +
-                        "Start each response with empathy and make sure to use comforting language. For example:\n" +
-                        "\n" +
-                        "If they express sadness, acknowledge their feelings and let them know it's okay to feel this way.\n" +
-                        "If they share frustration, validate their struggle and provide encouragement to navigate the challenges.\n" +
-                        "Here’s a situation to respond to: 'I’ve been feeling so overwhelmed with work and personal responsibilities, and it’s like there’s no way out",
-                },
-                { role: "user", content: userMessage },
-            ],
+            message: userMessage, // Send the user message to the backend
         }),
     };
 
